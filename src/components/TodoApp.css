@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    outline: none;
+}
+.darkBody{
+    background: url(../assets/bg-desktop-dark.jpg), hsl(235, 21%, 11%);
+    background-size: 100% 300px;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100dvh;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 130px;
+}
+.lightBody{
+    background: url(../assets/bg-desktop-light.jpg), hsl(0, 0%, 98%);
+    background-size: 100% 300px;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.app{
+    width: 400px;
+}
+.title{
+    color: #fff;
+    display: flex;
+    justify-content: space-between; 
+    padding-bottom: 30px;
+}
+h1{
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+.title img{
+   height: 25px;
+}
+.inputField{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: hsl(235, 24%, 19%);
+    height: 40px;
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.output{
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(235, 24%, 19%);
+    border-radius: 3px;
+    overflow: hidden;
+}
+.circle{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid hsl(237, 13%, 26%);
+}
+.circle:hover{
+    border-top-color: hsl(192, 100%, 67%);
+    border-bottom-color: hsl(280, 87%, 65%);
+    border-right-color: hsl(280, 87%, 65%);
+    border-left-color: hsl(192, 100%, 67%);
+}
+.select{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-image: linear-gradient(hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    background-color: hsl(235, 24%, 19%);
+    border: none;
+    font-size: 15px;
+    color: #fff;
+}
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 40px;
+    padding-left: 20px;
+    border-bottom:1px solid hsl(237, 14%, 26%);
+    text-align: left;
+    color: #fff;
+}
+li div{
+    word-break: break-all;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+li span{
+    font-size: 15px;
+}
+.completed div{
+    color: hsl(231, 4%, 39%);
+    text-decoration: line-through;
+}
+.cross{
+    padding-right: 20px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    padding: 0 20px 0 20px;
+}
+.detailsText{
+    font-size: 10px;
+    color: hsl(234, 11%, 52%);
+}
+.detailsTextTwo{
+    font-size: 10px;
+    color: hsl(234, 11%, 52%);
+}
+.items{
+    font-size: 10px;
+    color: hsl(234, 11%, 52%);
+}
+.track{
+    display: flex;
+    gap: 8px;
+}
+.foot{
+    font-size: 10px;
+    color: hsl(234, 11%, 52%);
+    padding-top: 40px;
+    text-align: center;
+}
+.detailsText:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.detailsTextTwo:hover{
+    color: #fff;
+    cursor: pointer;
+}
+input::selection{
+    border: none;
+}
+.hideApp{
+    display: none;
+}
+.position{
+    color: hsl(220, 98%, 61%);
+}
+.lightmode{
+    background-color: #fff;
+    color:hsl(235, 24%, 19%); 
+}
+.lightborder{
+    border-color: hsl(233, 11%, 84%)!important;
+}
+.lightbar:hover{
+    color: hsl(235, 24%, 19%) !important;
+}
+@media screen and (max-width:500px){
+    .darkBody{
+        background: url(../assets/bg-mobile-dark.jpg), hsl(235, 21%, 11%);
+        background-size: 100% 300px;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+    .lightBody{
+        background: url(../assets/bg-mobile-light.jpg), hsl(0, 0%, 98%);
+        background-size: 100% 300px;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+    .app{
+        max-width: 93dvw;
+    }
+    .track{
+        height: 40px;
+        position: absolute;
+        margin-top: 100px;
+        background-color: hsl(235, 24%, 19%);
+        align-items: center;
+        justify-content: space-around;
+        width: 93dvw;
+        margin-left: -20px;
+        border-radius: 3px;
+    }
+    .detailsText{
+        font-size: 15px;
+    }
+    .lightbar{
+        background-color: #fff;
+    }
+    .foot{
+        padding-top: 80px;
+    }
+}
+
+
+
