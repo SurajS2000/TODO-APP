@@ -20,6 +20,7 @@ class TodoApp extends Component {
   storeItems = (event) => {
     event.preventDefault();
     const { input, items, noOfItems } = this.state;
+    input.length<=2 ?alert("enter atleast 2 character"):
     this.setState({
       items: [...items, { value: input, select: false, display: true }],
       input: "",
